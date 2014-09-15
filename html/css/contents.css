@@ -1,0 +1,265 @@
+﻿.cke_editable
+{
+	font-size:13px;
+	line-height:1.6em;
+}
+blockquote
+{
+	font-style:italic;
+	font-family:Georgia, Times, "Times New Roman", serif;
+	padding:2px 0;
+	border:0 solid #ccc;
+}
+.cke_contents_ltr blockquote
+{
+	padding-left:20px;
+	padding-right:8px;
+	border-left-width:5px;
+}
+.cke_contents_rtl blockquote
+{
+	padding-left:8px;
+	padding-right:20px;
+	border-right-width:5px;
+}
+ol,ul,dl
+{
+	*margin-right:0;/* IE7: reset rtl list margin. (#7334) */
+	padding:0 40px;/* preserved spaces for list items with text direction other than the list. (#6249,#8049)*/
+}
+h1,h2,h3,h4,h5,h6
+{
+	line-height:1.2em;
+}
+hr
+{
+	border:0;
+	border-top:1px solid #ccc;
+}
+img.right
+{
+	border:1px solid #ccc;
+	float:right;
+	margin-left:15px;
+	padding:5px;
+}
+img.left
+{
+	border:1px solid #ccc;
+	float:left;
+	margin-right:15px;
+	padding:5px;
+}
+img:hover
+{
+	opacity:.9;
+	filter:alpha(opacity = 90);
+}
+body
+{
+	color:#333;
+	margin:20px;
+	font-family:Verdana, Arial, Helvetica, sans-serif, "MS sans serif";
+	font-size:75%;
+	border:0;
+	background-color:#FFF;
+	line-height:145%;
+}
+h1
+{
+	font-size:150%;
+	font-weight:normal;
+	margin:0;
+	padding:0 0 .5em 4px;
+	border-bottom:2px ridge #FFF;
+}
+h2
+{
+	font-size:135%;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif, "MS sans serif";
+	background-color:#405871;
+	color:#FFF;
+	margin:1.5em 0 .5em;
+	padding:.1em 0 .1em .2em;
+}
+h3
+{
+	font-size:115%;
+	font-weight:bold;
+	background-color:#E6E6E6;
+	margin:1.0 0 .5em;
+	padding:.1em 0 .1em .2em;
+	border-top:1px solid silver;
+	border-bottom:1px solid silver;
+}
+h4
+{
+	font-size:100%;
+	margin:.7em 0;
+	border-bottom:1px solid lightgrey;
+}
+ul,ol,p
+{
+	margin-top:.7em;
+	margin-bottom:.7em;
+}
+li
+{
+	margin-top:.2em;
+	margin-bottom:.2em;
+	margin-left:-.75em;
+}
+a
+{
+	color:#0782C1;
+	text-decoration:none;
+}
+a:link,a:active
+{
+	color:#00A;
+}
+a:visited
+{
+	color:#A0A;
+}
+a:hover
+{
+	text-decoration:underline;
+	color:#66C;
+}
+.Indent
+{
+	margin-left:2em;
+}
+.NoIndent
+{
+	margin-left:0;
+	margin-right:0;
+}
+pre,code,.Syntax
+{
+	font-family:Consolas, Courier New, monospace;
+}
+pre,code
+{
+	background-color:#F3F3FF;
+	border:solid 1px #E3E3EF;
+}
+.Syntax
+{
+	background-color:#FFA;
+	border:solid 1px #E8E89A;
+}
+code,span.Syntax
+{
+	padding:0 1px;
+}
+pre
+{
+	margin:.7em 1.5em;
+	padding:.7em 0 .7em .7em;
+	white-space:pre-wrap;/* CSS 2.1, works in IE8 but apparently not CHM viewer*/
+	word-wrap:break-word;/* IE7(-) CSS Hack, works in CHM viewer */
+}
+pre.Syntax
+{
+	margin:0 0 1.0;
+	padding:12px 0 12px 4px;
+	line-height:150%;
+}
+pre,pre.Short
+{
+	line-height:120%;
+}
+pre em,code em
+{
+	color:green;
+	font-style:normal;
+}
+table
+{
+	border:1px solid #000;
+	border-collapse:collapse;
+}
+table td,table th
+{
+	border:1px solid #000;
+	padding:.3em;
+}
+table.info
+{
+	border:solid 2px #C0C0C0;
+	border-collapse:collapse;
+	width:100%;
+}
+table.info td
+{
+	border:solid 2px #C0C0C0;
+	padding:.3em;
+}
+table.info th
+{
+	background-color:#F6F6F6;
+	padding:.3em;
+}
+h1 .ver,h2 .ver,h3 .ver
+{
+	font-size:65%;
+	font-weight:400;
+	margin-left:1em;
+	vertical-align:top;
+}
+h2 .ver
+{
+	color:lightgray;
+	font-size:80%;
+}
+.ver,.dull
+{
+	color:gray;
+}
+.red
+{
+	color:red;
+}
+.blue
+{
+	color:blue;
+}
+.note
+{
+	border:1px solid #9B9;
+	background-color:#E6FFE6;
+	color:#050;
+	padding:0 3px;
+}
+.methodShort
+{
+	border:solid thin #C0C0C0;
+	padding:.5em;
+	margin-bottom:1em;
+}
+.methodShort h2
+{
+	margin-top:0;
+}
+.methodShort table.info
+{
+	border:none;
+}
+.methodShort table.info td
+{
+	border:none;
+	vertical-align:text-top;
+}
+.methodShort:target
+{
+	border-color:black;
+}
+pre.prettyprint
+{
+	background-color:#F8F8F8;
+	border:1px solid #DDD;
+	padding:10px;
+}

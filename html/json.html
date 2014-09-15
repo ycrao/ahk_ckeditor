@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>函数：json()</title>
+		<meta charset="utf-8" />
+		<link href="css/contents.css" rel="stylesheet" />
+	</head>
+	<body>
+		<h1>函数：json()</h1>
+
+<p>此函数实现对<i>JSON</i>数据进行读写的功能，来自<a href="lib_json.html">JSON</a>类库。</p>
+
+<pre class="Syntax">
+#include&lt;json&gt;
+json(ByRef js, s, v = &quot;&quot;)</pre>
+
+<h3>参数</h3>
+
+<table border="1" cellpadding="1" cellspacing="1" style="width: 100%">
+	<tbody>
+		<tr>
+			<td>js</td>
+			<td>
+			<p>ByRef类型，JSON数据源。</p>
+			</td>
+		</tr>
+		<tr>
+			<td>s</td>
+			<td>
+			<p>要读写JSON数据元素的路径。</p>
+			</td>
+		</tr>
+		<tr>
+			<td>v</td>
+			<td>
+			<p>可选，写模式下要覆写元素的值。</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3>返回值</h3>
+
+<p>Value of element (prior to change)，返回要指定元素的值（写模式下会返回未改写之前的值）。</p>
+
+<h3>备注</h3>
+
+<p>此函数对部分复杂的JSON数据，可能无法正确解析。</p>
+
+<h3>相关</h3>
+
+<p>无</p>
+
+<h3>示例</h3>
+
+<pre class="prettyprint">
+<em>; ref: http://www.autohotkey.com/board/topic/31619-json-readwrite-parser/</em>
+<em>; JSON string: </em>
+j = {&quot;version&quot;:&quot;1&quot;,&quot;window&quot;:{&quot;state&quot;:3,&quot;screenX&quot;:25,&quot;screenY&quot;:25,&quot;width&quot;:790,&quot;height&quot;:605,&quot;test&quot;:{&quot;nested&quot;:&quot;object&quot;}},&quot;sidebar&quot;:{&quot;visible&quot;:false,&quot;width&quot;:&quot;200&quot;}}
+MsgBox, % json(j, &quot;version&quot;) <em>; 返回&quot;1&quot; </em>
+MsgBox, % json(j, &quot;window.width&quot;, 800) <em>; 返回790, 设置window-&gt;width值为800</em>
+r = { &quot;a&quot; : true, &quot;b&quot; : [ 1, [ 2.1, 2.2, { &quot;sub&quot; : false, &quot;test&quot; : [ null, &quot;pass&quot; ] } ], 3 ] } 
+MsgBox, % json(r, &quot;b[1][2].test[1]&quot;) <em>; 数组支持 </em></pre>
+
+	</body>
+</html>
