@@ -1,7 +1,6 @@
 ﻿Menu, Tray, NoStandard
 Menu, Tray, Add, 官方网站, OpenOfficalWebsite
 Menu, Tray, Add, 关于,ShowInfo
-Menu, Tray, Add, 帮助, GetHelp
 Menu,Tray, Add, 退出, Exit
 /*
 WB := ComObjCreate("InternetExplorer.Application") ; 创建 IE 对象
@@ -122,12 +121,8 @@ ShowInfo:
 MsgBox, 32, 欢迎使用AHK CKEditor, 您当前正在使用的版本为 v2.2, 此版取代之前旧版“静态网页编辑器及生成器(SHEM)”,旧版使用KindEditor作为编辑器内核，而新版使用CKEditor 4作为编辑器内核。`n获取最新版或反馈意见和建议请进官方QQ群260655062`n飞扬网络工作室 ©2013 版权所有
 return
 
-GetHelp:
-run http://raoyc.com/fysoft/ahk_ckeditor_help.html
-return
-
 OpenOfficalWebsite:
-run http://raoyc.com/fysoft/ahk_ckeditor.html
+run https://github.com/ycrao/ahk_ckeditor
 return
 
 GetEditorContent:
